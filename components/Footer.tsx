@@ -70,23 +70,25 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="w-fit mx-auto text-center">
             <h4 className="text-xl font-bold mb-6">Kontakt</h4>
-            <ul className="space-y-4">
-              <li className="flex items-center gap-3">
+            <ul className="space-y-4 mx-auto w-fit">
+              <li className=" ">
+                <Link href="tel:0607182300" className="text-gray-300 hover:text-white transition-colors flex items-center gap-3">
                 <Phone className="w-5 h-5 text-red-500" />
-                <a href="tel:0607182300" className="text-gray-300 hover:text-white transition-colors">
                   0607182300
-                </a>
+                </Link>
               </li>
-              <li className="flex items-start gap-3">
+              <li className=" ">
+                <Link href="tel:0607182300" className="text-gray-300 hover:text-white transition-colors flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-red-500 mt-1" />
                 <div className="text-gray-300">
                   <p>Rimska 9 br 5a</p>
                   <p>Brzi Brod, Niš</p>
                 </div>
+                </Link>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-3 ">
                 <Clock className="w-5 h-5 text-red-500" />
                 <span className="text-gray-300">Dostupni 24/7</span>
               </li>
