@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-end justify-center overflow-hidden">
+      <section className="relative h-[100dvh] flex items-end justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero.jpg"

@@ -19,10 +19,10 @@ import { navList } from "@/constants/index";
 
 const mobTitleStyles = "text-lg py-2";
 
-const MobileMenu = () => (
+const MobileMenu = ({ scrolled }: { scrolled: boolean }) => (
   <Sheet>
     <SheetTrigger className="lg:hidden">
-      <MenuIcon className="text-primary cursor-pointer" />
+      <MenuIcon className={`${scrolled ? "text-primary" : "text-white"} cursor-pointer`} />
     </SheetTrigger>
     <SheetContent>
       <SheetHeader>
@@ -114,7 +114,7 @@ export default function Header() {
             <p className="">+381607182300</p>
           </motion.button>
         </Link>
-        <MobileMenu />
+        <MobileMenu scrolled={scrolled} />
       </nav>
     </header>
   );
