@@ -21,9 +21,9 @@ export default function ElektricarPage() {
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
         
-        <div className="relative text-center text-white flex flex-col items-center justify-end h-full text-white px-4 max-w-4xl mx-auto mb-10 ">
+        <div className="relative text-center text-white flex flex-col items-center justify-end h-full text-white px-4 max-w-4xl mx-auto mb-5 md:mb-10 ">
           <motion.h1 
-            className="text-4xl md:text-6xl font-bold mb-6"
+            className="text-3xl md:text-6xl font-bold mb-4 md:mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -32,7 +32,7 @@ export default function ElektricarPage() {
           </motion.h1>
           
           <motion.h2 
-            className="text-xl md:text-2xl mb-8 text-yellow-400"
+            className="text-xl md:text-2xl md:mb-8 mb-4 text-yellow-400"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -41,7 +41,7 @@ export default function ElektricarPage() {
           </motion.h2>
           
           <motion.p 
-            className="text-lg md:text-xl mb-12 max-w-2xl mx-auto"
+            className="text-lg md:text-xl md:mb-12 mb-6 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -51,14 +51,14 @@ export default function ElektricarPage() {
           </motion.p>
           
           <motion.div 
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col sm:flex-row md:gap-4 gap-2 justify-center items-center"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <Link 
               href="tel:0607182300"
-              className="bg-primary hover:bg-red-700 text-white px-8 py-4 rounded-full text-xl font-bold flex items-center gap-3 transition-colors"
+              className="bg-primary hover:bg-red-700 text-white md:px-8 md:py-4 px-4 py-2 rounded-full text-xl font-bold flex items-center gap-3 transition-colors"
             >
               <Phone className="w-6 h-6" />
               0607182300
