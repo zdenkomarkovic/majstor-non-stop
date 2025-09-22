@@ -7,12 +7,16 @@ export const navList = [
     title: "Usluge",
     list: [
       {
-        title: "Usluga 1",
-        link: "",
+        title: "Vodoinstalater",
+        link: "/vodoinstalater",
       },
       {
-        title: "Usluga 2",
-        link: "",
+        title: "Električar",
+        link: "/elektricar",
+      },
+      {
+        title: "Bravar",
+        link: "/bravar",
       },
     ],
   },
