@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, MapPin, Clock, Mail, MessageCircle } from "lucide-react";
+import { Phone, MapPin, Clock } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 

@@ -72,7 +72,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h4 className="text-xl font-bold mb-6">Kontakt</h4>
-            <ul className="space-y-4 mx-auto w-fit">
+            <ul className="space-y-4">
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-red-500" />
                 <a href="tel:0607182300" className="text-gray-300 hover:text-white transition-colors">
@@ -134,7 +134,7 @@ export default function Footer() {
         <div className="border-t border-gray-700 pt-4 md:px-52">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
-              <p className="text-gray-400">
+              <p className="text-gray-400 text-base">
                 &copy; {new Date().getFullYear()} Majstor Non Stop. Sva prava zadržana.
               </p>
               <p className="text-sm text-gray-500 mt-1">
@@ -142,7 +142,7 @@ export default function Footer() {
               </p>
             </div>
             <div className="text-center md:text-right">
-              <p className="text-gray-400 text-xs">
+              <p className="text-gray-400 text-base">
                 Izrada sajta:{" "}
                 <a 
                   href="https://www.manikamwebsolutions.com/" 

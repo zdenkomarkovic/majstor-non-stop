@@ -9,7 +9,7 @@ export default function VodoinstalaterPage() {
   return (
     <div className="min-h-screen ">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[70vh] flex items-end justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/vodoinstalater.jpg"
@@ -21,7 +21,7 @@ export default function VodoinstalaterPage() {
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
         
-        <div className="relative  text-center text-white px-4 max-w-4xl mx-auto md:mt-32">
+        <div className="relative  text-center text-white flex flex-col items-center justify-end h-full text-white px-4 max-w-4xl mx-auto mb-10 ">
           <motion.h1 
             className="text-4xl md:text-6xl font-bold mb-6"
             initial={{ opacity: 0, y: 30 }}

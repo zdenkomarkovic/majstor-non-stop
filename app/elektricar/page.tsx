@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Clock, Zap, Shield, CheckCircle, AlertTriangle, Wrench, Home, Building, Lightbulb } from "lucide-react";
+import { Phone, Clock, Zap, Shield, CheckCircle, AlertTriangle, Wrench, Lightbulb } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,7 +9,7 @@ export default function ElektricarPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[70vh] flex items-end justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/elektricar.jpg"
@@ -21,14 +21,14 @@ export default function ElektricarPage() {
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
         
-        <div className="relative text-center text-white px-4 max-w-4xl mx-auto md:mt-20">
+        <div className="relative text-center text-white flex flex-col items-center justify-end h-full text-white px-4 max-w-4xl mx-auto mb-10 ">
           <motion.h1 
             className="text-4xl md:text-6xl font-bold mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            ELEKTRIČAR
+            ELEKTRIČAR NIŠ
           </motion.h1>
           
           <motion.h2 
@@ -37,7 +37,7 @@ export default function ElektricarPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Hitne Intervencije 24/7
+            Hitne Intervencije u Nišu i okolini 24/7
           </motion.h2>
           
           <motion.p 
@@ -87,7 +87,7 @@ export default function ElektricarPage() {
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Pružamo kompletan spektar električarskih usluga u Nišu i okolini. 
-              Naš tim stručnjaka je uvek spreman da odgovori na hitne pozive.
+              Naš tim stručnjaka je uvek spreman da odgovori na hitne pozive. Hausmajstor u Nišu i okolini.
             </p>
           </motion.div>
 
@@ -261,10 +261,10 @@ export default function ElektricarPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl text-white font-bold mb-6">
-            Problem sa Strujom?
+            Problem sa Strujom u Nišu i okolini?
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Ne čekajte! Pozovite nas odmah za hitnu električarsku intervenciju. Naš tim je spreman da odgovori na vaš poziv 24 sata dnevno.
+            Ne čekajte! Pozovite nas odmah za hitnu električarsku intervenciju. Naš tim je spreman da odgovori na vaš poziv 24 sata dnevno. Hausmajstor u Nišu i okolini.
             </p>
             <Link 
               href="tel:+381607182300"
@@ -274,7 +274,7 @@ export default function ElektricarPage() {
               0607182300
             </Link>
           </motion.div>
-            <Image src="/hero1.png" alt="Vodoinstalater" width={300} height={200} className=" rounded-full" />
+            <Image src="/cta2.jpg" alt="Vodoinstalater" width={300} height={200} className=" rounded-full" />
         </div>
       </section>
       {/* Why Choose Us for Electrical */}
