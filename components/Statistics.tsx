@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { Users, Clock, Star, Wrench } from "lucide-react";
+import { type LucideIcon } from "lucide-react"
 
 interface StatisticItem {
-  icon: React.ComponentType<any>;
+  icon: LucideIcon;
   value: number;
   label: string;
   suffix?: string;

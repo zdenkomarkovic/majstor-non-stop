@@ -112,7 +112,7 @@ export default function Testimonials() {
               <StarRating rating={testimonial.rating} />
               
               <p className="text-gray-700 mb-6 leading-relaxed">
-                "{testimonial.text}"
+              &quot;{testimonial.text}&quot;
               </p>
               
               <div className="border-t pt-4">
