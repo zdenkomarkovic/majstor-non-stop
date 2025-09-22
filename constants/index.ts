@@ -3,9 +3,7 @@ export const navList = [
     title: "Početna",
     link: "/",
   },
-  {
-    title: "Usluge",
-    list: [
+
       {
         title: "Vodoinstalater",
         link: "/vodoinstalater",
@@ -18,10 +16,6 @@ export const navList = [
         title: "Bravar",
         link: "/bravar",
       },
-    ],
-  },
-  {
-    title: "Kontakt",
-    link: "/kontakt",
-  },
+
+
 ];
