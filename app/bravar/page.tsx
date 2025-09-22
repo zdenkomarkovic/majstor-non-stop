@@ -253,7 +253,7 @@ export default function BravarPage() {
       </section>
             {/* Emergency CTA */}
             <section className="py-4 bg-gradient-to-br from-gray-900 to-gray-500 text-white">
-        <div className="container mx-auto px-4 text-center flex gap-10 justify-center items-center">
+        <div className="container mx-auto px-4 text-center flex flex-col-reverse md:flex-row gap-3 justify-center items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
