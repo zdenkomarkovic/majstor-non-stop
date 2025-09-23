@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://majstornis.rs
+
+# Sitemaps
+Sitemap: https://majstornis.rs/sitemap.xml

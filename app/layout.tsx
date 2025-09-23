@@ -16,8 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Majstor Non Stop - Hitne Intervencije 24/7 | Vodoinstalater, Električar, Bravar Niš",
-  description: "Majstor Non Stop - hitne intervencije 24/7 u Nišu. Vodoinstalater, električar i bravar usluge. Pucanje cevi, nestanak struje, izgubljeni kljucevi. Brzi Brod, Niš. Pozovite 0607182300",
+  title:
+    "Majstor Non Stop - Hitne Intervencije 24/7 | Vodoinstalater, Električar, Bravar Niš",
+  description:
+    "Majstor Non Stop - hitne intervencije 24/7 u Nišu. Vodoinstalater, električar i bravar usluge. Pucanje cevi, nestanak struje, izgubljeni kljucevi. Brzi Brod, Niš. Pozovite 0607182300",
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -31,7 +33,7 @@ export const metadata: Metadata = {
     "majstor non stop",
     "hitne intervencije niš",
     "vodoinstalater niš",
-    "električar niš", 
+    "električar niš",
     "bravar niš",
     "pucanje cevi",
     "curenje vode",
@@ -41,14 +43,15 @@ export const metadata: Metadata = {
     "polomljene brave",
     "majstor 24/7",
     "hitne usluge niš",
-    "brzi brod niš"
+    "brzi brod niš",
   ],
   alternates: {
-    canonical: "https://majstor-non-stop.rs/",
+    canonical: "https://majstornis.rs/",
   },
   openGraph: {
     title: "Majstor Non Stop - Hitne Intervencije 24/7",
-    description: "Hitne majstorske usluge u Nišu - vodoinstalater, električar, bravar. Dostupni 24/7. Pozovite 0607182300",
+    description:
+      "Hitne majstorske usluge u Nišu - vodoinstalater, električar, bravar. Dostupni 24/7. Pozovite 0607182300",
     type: "website",
     locale: "sr_RS",
   },
