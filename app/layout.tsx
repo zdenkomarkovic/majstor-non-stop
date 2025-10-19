@@ -79,6 +79,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const googleAdsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
+  const googleAnalyticsId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID;
+
   return (
     <html lang="sr">
       <head>
@@ -117,18 +120,33 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-muted-foreground bg-muted  text-base md:text-xl`}
       >
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17639502157"
-          strategy="afterInteractive"
-        />
-        <Script id="google-ads" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-17639502157');
-          `}
-        </Script>
+        {/* Google Analytics */}
+        {googleAnalyticsId && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${googleAnalyticsId}');
+              `}
+            </Script>
+          </>
+        )}
+
+        {/* Google Ads */}
+        {googleAdsId && (
+          <Script id="google-ads" strategy="afterInteractive">
+            {`
+              gtag('config', '${googleAdsId}');
+            `}
+          </Script>
+        )}
+
         <Header />
         {children}
         <ButtonToTop />
