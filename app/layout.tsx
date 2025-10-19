@@ -1,9 +1,13 @@
 import ButtonToTop from "@/components/ButtonToTop";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import head from "@/node_modules/next/head";
+import { after } from "@/node_modules/next/server";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
+import page from "./page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,8 +34,18 @@ export const metadata: Metadata = {
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
     other: [
-      { rel: "icon", url: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
-      { rel: "icon", url: "/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
+      {
+        rel: "icon",
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
     ],
   },
   manifest: "/site.webmanifest",
@@ -49,7 +63,7 @@ export const metadata: Metadata = {
     "polomljene brave",
     "majstor 24/7",
     "hitne usluge niš",
-    "brzi brod niš",
+    "majstor niš",
   ],
   alternates: {
     canonical: "https://majstornis.rs/",
@@ -72,16 +86,52 @@ export default function RootLayout({
     <html lang="sr">
       <head>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
-        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/android-chrome-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href="/android-chrome-512x512.png"
+        />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-muted-foreground bg-muted  text-base md:text-xl`}
       >
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17639502157"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17639502157');
+          `}
+        </Script>
         <Header />
         {children}
         <ButtonToTop />
