@@ -120,7 +120,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-muted-foreground bg-muted  text-base md:text-xl`}
       >
-        {/* Google Analytics */}
+        {/* Google Analytics & Google Ads */}
         {googleAnalyticsId && (
           <>
             <Script
@@ -133,18 +133,10 @@ export default function RootLayout({
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', '${googleAnalyticsId}');
+                ${googleAdsId ? `gtag('config', '${googleAdsId}');` : ''}
               `}
             </Script>
           </>
-        )}
-
-        {/* Google Ads */}
-        {googleAdsId && (
-          <Script id="google-ads" strategy="afterInteractive">
-            {`
-              gtag('config', '${googleAdsId}');
-            `}
-          </Script>
         )}
 
         <Header />
