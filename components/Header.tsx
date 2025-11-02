@@ -22,7 +22,9 @@ const mobTitleStyles = "text-lg py-2";
 const MobileMenu = ({ scrolled }: { scrolled: boolean }) => (
   <Sheet>
     <SheetTrigger className="lg:hidden">
-      <MenuIcon className={`${scrolled ? "text-primary" : "text-white"} cursor-pointer`} />
+      <MenuIcon
+        className={`${scrolled ? "text-primary" : "text-white"} cursor-pointer`}
+      />
     </SheetTrigger>
     <SheetContent>
       <SheetHeader>
@@ -30,7 +32,6 @@ const MobileMenu = ({ scrolled }: { scrolled: boolean }) => (
         <SheetContent>
           <ul>
             {navList.map((item, index) => {
-          
               return (
                 <Link key={index} href={item.link}>
                   <motion.li
@@ -52,7 +53,6 @@ const MobileMenu = ({ scrolled }: { scrolled: boolean }) => (
 const DesktopNav = () => (
   <ul className="hidden gap-8 lg:flex  text-xl">
     {navList.map((item, index) => {
-  
       return (
         <Link key={index} href={item.link}>
           <motion.li
@@ -102,18 +102,22 @@ export default function Header() {
           />
         </Link>
         <DesktopNav />
-        <Link href="tel:+381607182300">
+        <a href="tel:+381607182300">
           <motion.button
             whileHover={{
               color: "hsl(var(--foreground))",
               backgroundColor: "hsl(var(--primary))",
             }}
-            className={`${scrolled ? "text-primary border-primary" : "text-white border-white"} items-center justify-center rounded-full  border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex`}
+            className={`${
+              scrolled
+                ? "text-primary border-primary"
+                : "text-white border-white"
+            } items-center justify-center rounded-full  border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex`}
           >
             <PhoneIcon />
             <p className="">+381607182300</p>
           </motion.button>
-        </Link>
+        </a>
         <MobileMenu scrolled={scrolled} />
       </nav>
     </header>
