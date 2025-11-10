@@ -153,14 +153,6 @@ export default function Footer() {
                   Bravar
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/kontakt"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Kontakt
-                </Link>
-              </li>
             </ul>
           </div>
         </div>
