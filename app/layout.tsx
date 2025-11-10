@@ -91,19 +91,6 @@ export default function RootLayout({
   })(window,document,'script','dataLayer','GTM-WGV5ZXCW');
 `}
         </Script>
-        {/* Google Analytics 4 */}
-        {/* <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-8VQHCWF7T6"
-          strategy="afterInteractive"
-        />
-        <Script id="ga4-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-8VQHCWF7T6');
-          `}
-        </Script> */}
 
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link

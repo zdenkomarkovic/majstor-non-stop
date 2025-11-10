@@ -8,8 +8,14 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: "Content-Security-Policy",
-            value:
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://pagead2.googlesyndication.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com",
+            value: `
+              default-src 'self';
+              script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://stats.g.doubleclick.net https://pagead2.googlesyndication.com;
+              connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net;
+              img-src 'self' data: https://www.google-analytics.com;
+              style-src 'self' 'unsafe-inline';
+              frame-src https://www.googletagmanager.com;
+            `.replace(/\s+/g, " "), // uklanja višak praznih mesta
           },
         ],
       },
