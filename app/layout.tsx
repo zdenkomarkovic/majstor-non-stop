@@ -92,7 +92,7 @@ export default function RootLayout({
 `}
         </Script>
         {/* Google Analytics 4 */}
-        <Script
+        {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8VQHCWF7T6"
           strategy="afterInteractive"
         />
@@ -103,7 +103,7 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', 'G-8VQHCWF7T6');
           `}
-        </Script>
+        </Script> */}
 
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link
