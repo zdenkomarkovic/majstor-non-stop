@@ -10,8 +10,6 @@ import {
   CheckCircle,
   Info,
 } from "lucide-react";
-import type { Metadata } from "next";
-
 const vodoUsluge = [
   { name: "Zamena ventila (virbla) i ek ventila", price: "2.000 din" },
   { name: "Zamena slavine", price: "2.000 din" },
