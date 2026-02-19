@@ -16,6 +16,10 @@ export const navList = [
         title: "Bravar",
         link: "/bravar",
       },
+      {
+        title: "Cenovnik",
+        link: "/cenovnik",
+      },
 
 
 ];

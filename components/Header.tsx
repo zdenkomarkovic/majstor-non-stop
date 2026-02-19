@@ -50,14 +50,16 @@ const MobileMenu = ({ scrolled }: { scrolled: boolean }) => (
   </Sheet>
 );
 
-const DesktopNav = () => (
+const DesktopNav = ({ scrolled }: { scrolled: boolean }) => (
   <ul className="hidden gap-8 lg:flex  text-xl">
     {navList.map((item, index) => {
       return (
         <Link key={index} href={item.link}>
           <motion.li
-            className="transition-colors underline-animation"
+            className="underline-animation"
+            animate={{ color: scrolled ? "hsl(var(--primary))" : "#ffffff" }}
             whileHover={{ color: "hsl(var(--primary))", scale: 1.1 }}
+            transition={{ duration: 0.2 }}
           >
             {item.title}
           </motion.li>
@@ -101,7 +103,7 @@ export default function Header() {
             className="rounded-full"
           />
         </Link>
-        <DesktopNav />
+        <DesktopNav scrolled={scrolled} />
         <a href="tel:+381607182300">
           <motion.button
             whileHover={{
