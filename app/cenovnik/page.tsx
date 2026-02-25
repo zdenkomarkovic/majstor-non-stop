@@ -79,6 +79,7 @@ export default function CenovnikPage() {
           </motion.p>
           <motion.a
             href="tel:+381607182300"
+            onClick={() => window.gtag_report_conversion?.('tel:+381607182300')}
             className="bg-primary hover:bg-red-700 text-white px-8 py-4 rounded-full text-xl font-bold flex items-center gap-3 transition-colors"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -292,6 +293,7 @@ export default function CenovnikPage() {
             </p>
             <a
               href="tel:+381607182300"
+              onClick={() => window.gtag_report_conversion?.('tel:+381607182300')}
               className="inline-flex items-center gap-3 bg-primary hover:bg-red-700 text-white px-8 py-4 rounded-full text-xl font-bold transition-colors"
             >
               <Phone className="w-6 h-6" />

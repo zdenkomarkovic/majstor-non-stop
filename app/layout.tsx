@@ -100,28 +100,28 @@ export default function RootLayout({
         <Script id="gtag-init" strategy="afterInteractive">
           {`
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-17670700223');
+  window.gtag = function(){window.dataLayer.push(arguments);}
+  window.gtag('js', new Date());
+  window.gtag('config', 'AW-17670700223');
 `}
         </Script>
 
         <Script id="gtag-conversion" strategy="afterInteractive">
           {`
-  function gtag_report_conversion(url) {
+  window.gtag_report_conversion = function(url) {
     var callback = function () {
       if (typeof(url) != 'undefined') {
         window.location = url;
       }
     };
-    gtag('event', 'conversion', {
+    window.gtag('event', 'conversion', {
       'send_to': 'AW-17670700223/APh5CMDOuf4bEL_5hepB',
       'value': 1.0,
       'currency': 'RSD',
       'event_callback': callback
     });
     return false;
-  }
+  };
 `}
         </Script>
 
