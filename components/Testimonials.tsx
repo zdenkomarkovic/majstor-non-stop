@@ -150,7 +150,7 @@ export default function Testimonials() {
             </p>
             <a
               href="tel:+381607182300"
-              onClick={() => (window as any).gtag_report_conversion?.('tel:+381607182300')}
+              onClick={() => window.gtag_report_conversion?.('tel:+381607182300')}
               className="inline-block bg-white text-primary px-8 py-4 rounded-full text-xl font-bold hover:bg-gray-100 transition-colors"
             >
               0607182300
