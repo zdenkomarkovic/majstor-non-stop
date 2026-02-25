@@ -71,6 +71,7 @@ export default function Home() {
           >
             <a
               href="tel:+381607182300"
+              onClick={() => (window as any).gtag_report_conversion?.('tel:+381607182300')}
               className="bg-primary hover:bg-red-700 text-white px-8 py-4 rounded-full text-xl font-bold flex items-center gap-3 transition-colors"
             >
               <Phone className="w-6 h-6" />
@@ -251,6 +252,7 @@ export default function Home() {
             </p>
             <a
               href="tel:+381607182300"
+              onClick={() => (window as any).gtag_report_conversion?.('tel:+381607182300')}
               className="inline-block bg-white text-black px-8 py-4 rounded-full text-xl font-bold hover:bg-gray-100 transition-colors"
             >
               <Phone className="w-6 h-6 inline mr-2" />

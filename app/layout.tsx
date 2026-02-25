@@ -92,6 +92,39 @@ export default function RootLayout({
 `}
         </Script>
 
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17670700223"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-17670700223');
+`}
+        </Script>
+
+        <Script id="gtag-conversion" strategy="afterInteractive">
+          {`
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17670700223/APh5CMDOuf4bEL_5hepB',
+      'value': 1.0,
+      'currency': 'RSD',
+      'event_callback': callback
+    });
+    return false;
+  }
+`}
+        </Script>
+
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link
           rel="icon"

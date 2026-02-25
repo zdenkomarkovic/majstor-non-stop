@@ -253,7 +253,7 @@ export default function CenovnikPage() {
                     Dolazak – utvrđivanje kvara / problema
                   </span>
                   <span className="text-gray-500 text-sm">
-                    Uračunava se u cenu popravke
+                    Uračunat u cenu popravke
                   </span>
                 </div>
               </div>
@@ -265,9 +265,8 @@ export default function CenovnikPage() {
               <div className="flex items-start gap-3">
                 <Info className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <p className="text-gray-700 text-sm md:text-base">
-                  Za ostale usluge – cena se utvrđuje na licu mesta, pri
-                  dolasku ili utvrđivanju problema. Pozovite nas za besplatnu
-                  procenu.
+                  Za ostale usluge – cena se utvrđuje na licu mesta, pri dolasku
+                  ili utvrđivanju problema. Pozovite nas za besplatnu procenu.
                 </p>
               </div>
             </div>

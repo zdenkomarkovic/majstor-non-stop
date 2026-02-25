@@ -104,7 +104,7 @@ export default function Header() {
           />
         </Link>
         <DesktopNav scrolled={scrolled} />
-        <a href="tel:+381607182300">
+        <a href="tel:+381607182300" onClick={() => (window as any).gtag_report_conversion?.('tel:+381607182300')}>
           <motion.button
             whileHover={{
               color: "hsl(var(--foreground))",

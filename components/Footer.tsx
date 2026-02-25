@@ -92,6 +92,7 @@ export default function Footer() {
               <li className=" ">
                 <a
                   href="tel:0607182300"
+                  onClick={() => (window as any).gtag_report_conversion?.('tel:0607182300')}
                   className="text-gray-300 hover:text-white transition-colors flex items-center gap-3"
                 >
                   <Phone className="w-5 h-5 text-red-500" />
@@ -101,6 +102,7 @@ export default function Footer() {
               <li className=" ">
                 <a
                   href="tel:0607182300"
+                  onClick={() => (window as any).gtag_report_conversion?.('tel:0607182300')}
                   className="text-gray-300 hover:text-white transition-colors flex items-center gap-3"
                 >
                   <MapPin className="w-5 h-5 text-red-500 mt-1" />
