@@ -144,7 +144,7 @@ export default function RootLayout({
       }
     };
     window.gtag('event', 'conversion', {
-      'send_to': 'AW-17670700223/APh5CMDOuf4bEL_5hepB',
+      'send_to': 'AW-17670700223/okMgCPLe0oocEL_5hepB',
       'value': 1.0,
       'currency': 'RSD',
       'event_callback': callback
