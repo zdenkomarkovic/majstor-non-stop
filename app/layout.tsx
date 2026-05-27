@@ -18,9 +18,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title:
-    "Majstor Non Stop - Hitne Intervencije 24/7 | Vodoinstalater, Električar, Bravar Niš",
+    "Majstor Non Stop - Hitne Intervencije 24/7 | Vodoinstalater, Bravar Niš",
   description:
-    "Majstor Non Stop - hitne intervencije 24/7 u Nišu. Vodoinstalater, električar i bravar usluge. Pucanje cevi, nestanak struje, izgubljeni kljucevi. Brzi Brod, Niš. Pozovite 0607182300",
+    "Hitne majstorske intervencije 24/7 u Nišu. Vodoinstalater, bravar. Pucanje cevi, curenje vode, izgubljeni ključevi, polomljene brave. Pozovite 0607182300",
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -50,27 +50,52 @@ export const metadata: Metadata = {
     "majstor non stop",
     "hitne intervencije niš",
     "vodoinstalater niš",
-    "električar niš",
+    "hitni vodoinstalater niš",
     "bravar niš",
+    "hitni bravar niš",
     "pucanje cevi",
     "curenje vode",
     "nestanak struje",
     "kratki spoj",
-    "izgubljeni kljucevi",
+    "izgubljeni ključevi",
     "polomljene brave",
     "majstor 24/7",
     "hitne usluge niš",
     "majstor niš",
   ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   alternates: {
     canonical: "https://majstornis.rs/",
   },
   openGraph: {
     title: "Majstor Non Stop - Hitne Intervencije 24/7",
     description:
-      "Hitne majstorske usluge u Nišu - vodoinstalater, električar, bravar. Dostupni 24/7. Pozovite 0607182300",
+      "Hitne majstorske usluge u Nišu - vodoinstalater, bravar. Dostupni 24/7. Pozovite 0607182300",
     type: "website",
+    url: "https://majstornis.rs/",
+    siteName: "Majstor Non Stop",
     locale: "sr_RS",
+    images: [
+      {
+        url: "/android-chrome-512x512.png",
+        width: 512,
+        height: 512,
+        alt: "Majstor Non Stop - Hitne Intervencije Niš",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Majstor Non Stop - Hitne Intervencije 24/7",
+    description:
+      "Hitne majstorske usluge u Nišu - vodoinstalater, bravar. Dostupni 24/7. Pozovite 0607182300",
   },
 };
 
@@ -81,40 +106,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sr">
-      <head>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="192x192"
-          href="/android-chrome-192x192.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="512x512"
-          href="/android-chrome-512x512.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-      </head>
-      <body
+<body
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-muted-foreground bg-muted  text-base md:text-xl`}
       >
         <Header />
