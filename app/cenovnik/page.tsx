@@ -1,15 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Phone,
-  Clock,
-  Droplets,
-  Zap,
-  Key,
-  CheckCircle,
-  Info,
-} from "lucide-react";
+import { Phone, Clock, Droplets, Key, CheckCircle, Info } from "lucide-react";
 const vodoUsluge = [
   { name: "Zamena ventila (virbla) i ek ventila", price: "2.000 din" },
   { name: "Zamena slavine", price: "2.000 din" },

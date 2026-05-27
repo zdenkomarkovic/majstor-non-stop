@@ -6,7 +6,6 @@ import {
   Clock,
   MapPin,
   Wrench,
-  Zap,
   Key,
   Droplets,
   Shield,
