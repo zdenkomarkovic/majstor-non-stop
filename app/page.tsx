@@ -39,7 +39,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            MAJSTOR NON STOP NIŠ
+            MAJSTOR NIŠ <span className="block text-red-700"> NON STOP </span>
           </motion.h1>
 
           <motion.h2
