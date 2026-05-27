@@ -1,14 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import {
-  Phone,
-  MapPin,
-  Clock,
-  Wrench,
-  Zap,
-  Key,
-  Instagram,
-} from "lucide-react";
+import { Phone, MapPin, Clock, Wrench, Key, Instagram } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../public/logo.png";
@@ -63,15 +55,7 @@ export default function Footer() {
                   Vodoinstalater
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/elektricar"
-                  className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
-                >
-                  <Zap className="w-4 h-4" />
-                  Električar
-                </Link>
-              </li>
+
               <li>
                 <Link
                   href="/bravar"
@@ -92,7 +76,9 @@ export default function Footer() {
               <li className=" ">
                 <a
                   href="tel:0607182300"
-                  onClick={() => window.gtag_report_conversion?.('tel:0607182300')}
+                  onClick={() =>
+                    window.gtag_report_conversion?.("tel:0607182300")
+                  }
                   className="text-gray-300 hover:text-white transition-colors flex items-center gap-3"
                 >
                   <Phone className="w-5 h-5 text-red-500" />
@@ -102,7 +88,9 @@ export default function Footer() {
               <li className=" ">
                 <a
                   href="tel:0607182300"
-                  onClick={() => window.gtag_report_conversion?.('tel:0607182300')}
+                  onClick={() =>
+                    window.gtag_report_conversion?.("tel:0607182300")
+                  }
                   className="text-gray-300 hover:text-white transition-colors flex items-center gap-3"
                 >
                   <MapPin className="w-5 h-5 text-red-500 mt-1" />

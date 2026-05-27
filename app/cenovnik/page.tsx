@@ -38,14 +38,6 @@ const bravarUsluge = [
   { name: "Zamena kvake (sobna vrata)", price: "1.500 – 3.000 din" },
 ];
 
-const elektroUsluge = [
-  { name: "Zamena prekidača / utičnice", price: "1.800 din" },
-  { name: "Zamena indikatora", price: "2.500 din" },
-  { name: "Zamena prekidača na indikatoru", price: "1.500 din / kom" },
-  { name: "Zamena LED panela / lustera", price: "2.000 din" },
-  { name: "Zamena automatskog osigurača", price: "2.500 din" },
-];
-
 export default function CenovnikPage() {
   return (
     <div className="min-h-screen">
@@ -79,7 +71,7 @@ export default function CenovnikPage() {
           </motion.p>
           <motion.a
             href="tel:+381607182300"
-            onClick={() => window.gtag_report_conversion?.('tel:+381607182300')}
+            onClick={() => window.gtag_report_conversion?.("tel:+381607182300")}
             className="bg-primary hover:bg-red-700 text-white px-8 py-4 rounded-full text-xl font-bold flex items-center gap-3 transition-colors"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -191,48 +183,6 @@ export default function CenovnikPage() {
             </div>
           </motion.div>
 
-          {/* Elektro usluge */}
-          <motion.div
-            className="mb-12"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="bg-primary w-12 h-12 rounded-full flex items-center justify-center">
-                <Zap className="w-6 h-6 text-white" />
-              </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-                Elektro Usluge
-              </h2>
-            </div>
-            <div className="bg-white rounded-2xl shadow-md overflow-hidden">
-              {elektroUsluge.map((item, index) => (
-                <motion.div
-                  key={index}
-                  className={`flex items-center justify-between px-6 py-4 ${
-                    index % 2 === 0 ? "bg-white" : "bg-gray-50"
-                  } border-b border-gray-100 last:border-0`}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.04 }}
-                  viewport={{ once: true }}
-                >
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-gray-800 font-medium">
-                      {item.name}
-                    </span>
-                  </div>
-                  <span className="text-primary font-bold text-lg whitespace-nowrap ml-4">
-                    {item.price}
-                  </span>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-
           {/* Opšte / Dolazak */}
           <motion.div
             className="bg-white rounded-2xl shadow-md overflow-hidden"
@@ -293,7 +243,9 @@ export default function CenovnikPage() {
             </p>
             <a
               href="tel:+381607182300"
-              onClick={() => window.gtag_report_conversion?.('tel:+381607182300')}
+              onClick={() =>
+                window.gtag_report_conversion?.("tel:+381607182300")
+              }
               className="inline-flex items-center gap-3 bg-primary hover:bg-red-700 text-white px-8 py-4 rounded-full text-xl font-bold transition-colors"
             >
               <Phone className="w-6 h-6" />

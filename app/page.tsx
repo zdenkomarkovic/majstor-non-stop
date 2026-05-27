@@ -58,7 +58,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Vodoinstalater • Električar • Bravar
+            Vodoinstalater • Bravar
             <br />
             Dostupni 24 sata dnevno, 7 dana u nedelji
           </motion.p>
@@ -71,7 +71,9 @@ export default function Home() {
           >
             <a
               href="tel:+381607182300"
-              onClick={() => window.gtag_report_conversion?.('tel:+381607182300')}
+              onClick={() =>
+                window.gtag_report_conversion?.("tel:+381607182300")
+              }
               className="bg-primary hover:bg-red-700 text-white px-8 py-4 rounded-full text-xl font-bold flex items-center gap-3 transition-colors"
             >
               <Phone className="w-6 h-6" />
@@ -104,7 +106,7 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {/* Vodoinstalater */}
             <motion.div
               className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow"
@@ -122,7 +124,8 @@ export default function Home() {
                 </h3>
                 <p className="text-gray-600 mb-6">
                   Hitne intervencije za sve probleme sa vodom - pucanje cevi,
-                  curenje, kvarovi u instalacijama. Brza i efikasna rešenja.
+                  curenje, kvarovi u instalacijama, zapušena kanalizacija. Brza
+                  i efikasna rešenja.
                 </p>
                 <ul className="text-left space-y-2 mb-6">
                   <li className="flex items-center gap-2">
@@ -137,51 +140,13 @@ export default function Home() {
                     <Shield className="w-4 h-4 text-primary" />
                     Kvarovi u instalacijama
                   </li>
+                  <li className="flex items-center gap-2">
+                    <Shield className="w-4 h-4 text-primary" />
+                    Otpušavanje kanalizacije
+                  </li>
                 </ul>
                 <Link
                   href="/vodoinstalater"
-                  className="inline-block bg-primary hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition-colors"
-                >
-                  Saznaj više
-                </Link>
-              </div>
-            </motion.div>
-
-            {/* Električar */}
-            <motion.div
-              className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <div className="text-center">
-                <div className="bg-gray-200 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Zap className="w-10 h-10 text-primary" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Električar
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  Rešavamo sve električne probleme - nestanak struje, kratki
-                  spoj, kvarovi u instalacijama. Sigurno i profesionalno.
-                </p>
-                <ul className="text-left space-y-2 mb-6">
-                  <li className="flex items-center gap-2">
-                    <Shield className="w-4 h-4 text-primary" />
-                    Nestanak struje
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Shield className="w-4 h-4 text-primary" />
-                    Kratki spoj
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Shield className="w-4 h-4 text-primary" />
-                    Kvarovi u instalacijama
-                  </li>
-                </ul>
-                <Link
-                  href="/elektricar"
                   className="inline-block bg-primary hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition-colors"
                 >
                   Saznaj više
@@ -252,7 +217,9 @@ export default function Home() {
             </p>
             <a
               href="tel:+381607182300"
-              onClick={() => window.gtag_report_conversion?.('tel:+381607182300')}
+              onClick={() =>
+                window.gtag_report_conversion?.("tel:+381607182300")
+              }
               className="inline-block bg-white text-black px-8 py-4 rounded-full text-xl font-bold hover:bg-gray-100 transition-colors"
             >
               <Phone className="w-6 h-6 inline mr-2" />
